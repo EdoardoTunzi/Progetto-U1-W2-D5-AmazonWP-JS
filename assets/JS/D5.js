@@ -89,10 +89,19 @@ for (let i = 0; i < cars.length; i++) {
   cars[i].trims.pop();
 }
 console.log(cars);
+
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
+
+for (let i = 0; i < cars.length; i++) {
+  const firstTrimElement = cars[i].trims[0];
+  justTrims.push(firstTrimElement);
+}
+/*INZIALMENTE AVEVO UTILIZZATO METODO .SHIFT, MA POI HO REALIZZATO CHE COSì MODIFICAVO L'ARRAY ORIGINALE, 
+QUINDI HO PREFERITO UTILIZZARE SOLO TRIMS[0] PER LEGGERE IL PRIMO ELEMENTO, SENZA MODIFICARE L'ARRAY CARS.*/
+console.log(justTrims);
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
