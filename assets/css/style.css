@@ -22,6 +22,7 @@ nav {
 nav a {
   color: #f5fcfd;
   text-decoration: none;
+  font-size: 15pt;
 }
 nav ul {
   display: flex;
@@ -79,25 +80,48 @@ main {
 }
 
 /*CARDS SECTION*/
-.card-box {
+.cards-box {
   margin-top: 45px;
   background-color: white;
 }
-.card-box h2,
-.card-box p {
+.cards-box h2,
+.cards-box p {
   display: inline-block;
 }
 
+/*Titolo cardbox*/
+.cbTitle {
+  padding: 20px;
+}
+.cbTitle h2 {
+  margin-right: 20px;
+}
+.mainh2 {
+  font-size: 19pt;
+}
+.mainA {
+  color: #046d63;
+  font-size: 16pt;
+  font-weight: 600;
+}
+/*cards singole*/
+.cardBlock {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
 .card {
   display: inline-block;
-  width: calc(25% - 20px);
+  width: calc(25% - 50px);
   text-align: center;
+  padding: 20px;
 }
 .card img {
   width: 100%;
   height: 460px;
   object-fit: cover;
   border-radius: 25px;
+  box-shadow: 16px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /*BANNERS SECTION*/
