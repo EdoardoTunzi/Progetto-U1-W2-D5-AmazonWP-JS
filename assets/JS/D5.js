@@ -63,6 +63,14 @@ const cars = [
   },
 ];
 
+for (let i = 0; i < cars.length; i++) {
+  const carsObj = cars[i];
+  const licensePlate = "AB" + Math.floor(Math.random() * 1500);
+  carsObj.licensePlate = licensePlate;
+}
+
+console.log(cars);
+
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
