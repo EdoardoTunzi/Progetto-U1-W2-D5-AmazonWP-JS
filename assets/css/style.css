@@ -103,6 +103,7 @@ main {
   color: #046d63;
   font-size: 16pt;
   font-weight: 600;
+  text-decoration: none;
 }
 /*cards singole*/
 .cardBlock {
@@ -130,6 +131,16 @@ main {
   width: 100%;
 }
 
+.img-banner p,
+.img-banner a {
+  display: inline-block;
+  padding-right: 20px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+.img-banner {
+  text-align: center;
+}
 /*FOOTER*/
 
 .backTop {
